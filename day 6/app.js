@@ -444,4 +444,3 @@ let students = [
 
 // Car.getColors();
 
-const name = prompt("Enter your nam");
