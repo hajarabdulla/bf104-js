@@ -199,3 +199,9 @@ const fruits = ["Banana", "Orange", "Apple", "Mango", "Fig", "Passionfruit"];
 // fruits.splice(2, 0, "Lemon", "Kiwi");
 // fruits.splice(2, 2, "Lemon", "Kiwi");
 // console.log(fruits);
+
+const arr = [12, 24, 48, 57, 64];
+
+let n = 38;
+arr.splice(2, 0, n);
+console.log(arr);
