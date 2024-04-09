@@ -83,28 +83,78 @@
 
 // console.log(rest);
 
-const me = {
-  name: "Hajar",
-  surname: "Abdullayeva",
-  age: 22,
-  gender: false,
-  mySis: {
-    name: "nigar",
-    age: 21,
-  },
-};
+// const me = {
+//   name: "Hajar",
+//   surname: "Abdullayeva",
+//   age: 22,
+//   gender: false,
+//   mySis: {
+//     name: "nigar",
+//     age: 21,
+//   },
+// };
 
-const me2 = {
-  name: "Minaya",
-  surname: "Binnatova",
-  age: 22,
-  gender: false,
-};
+// const me2 = {
+//   name: "Minaya",
+//   surname: "Binnatova",
+//   age: 22,
+//   gender: false,
+// };
 
-const { name, surname, age, gender, mySis } = me;
-const { name: mySisName, age: mySisAge } = mySis;
+// const { name, surname, age, gender, mySis } = me;
+// const { name: mySisName, age: mySisAge } = mySis;
 // const { name: minayaName, surname: minayaSurbname, age, gender } = me2;
-console.log(mySisName);
+// console.log(mySisName);
 
-const me3 = { ...me, additionalParam: "This is additional" };
-console.log(me3);
+// const me3 = { ...me, additionalParam: "This is additional" };
+// console.log(me3);
+
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+// }
+
+// const p = new Person("Hajar", 22);
+// const p2 = new Person("Nigar", 21);
+
+// console.log(p);
+// console.log(p2);
+
+// const str = new String("something");
+// console.log(str);
+
+// const num = new Number(78);
+// console.log(num);
+
+// class OurNumber {
+//   constructor(params) {
+//     this.params = params;
+//   }
+// }
+
+// const num2 = new OurNumber(89);
+// console.log(num2);
+
+class Person {
+  #name;
+  constructor(name, age) {
+    this.#name = name;
+    this.age = age;
+  }
+
+  get getName() {
+    console.log(this.#name);
+  }
+
+  set setName(val) {
+    this.#name = val;
+  }
+}
+const p = new Person("Hajar", 22);
+// p.name = "Nigar";
+
+p.setName = "Nigar";
+p.getName;
+console.log(p);
