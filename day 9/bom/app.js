@@ -24,6 +24,6 @@
 //   console.log("Hello world");
 // }, 3000);
 
-setInterval(() => {
-  document.write("Hello world");
-}, 3000);
+// setInterval(() => {
+//   document.write("Hello world");
+// }, 3000);
