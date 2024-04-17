@@ -20,6 +20,7 @@ form.addEventListener("submit", (e) => {
   const deleteBtn = document.createElement("button");
   deleteBtn.classList.add("btn");
   deleteBtn.classList.add("btn-danger");
+  ``;
   deleteBtn.innerText = "Delete";
 
   const checkBtn = document.createElement("button");
@@ -52,3 +53,13 @@ form.addEventListener("submit", (e) => {
     }
   });
 });
+
+const counter = 3;
+const notes = [
+  {
+    id: 0,
+    title: "dfjkd",
+    desc: "dfj",
+  },
+  {},
+];
