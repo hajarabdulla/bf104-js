@@ -58,6 +58,7 @@ fetchProducts().then((data) => {
 const form = document.querySelector("form");
 const titleInput = document.querySelector("#title");
 const priceInput = document.querySelector("#price");
+const deleteBtn = document.querySelector("#deleteBtn");
 
 form.addEventListener("click", async (e) => {
   e.preventDefault();
@@ -83,4 +84,12 @@ form.addEventListener("click", async (e) => {
   });
 
   return newData;
+});
+
+deleteBtn.addEventListener("click", async () => {
+  const deletedData = await fetch("https://fakestoreapi.com/products/1", {
+    method: "DELETE",
+  });
+
+  return deletedData;
 });
